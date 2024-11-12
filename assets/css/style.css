@@ -362,7 +362,8 @@ body {
 .hero-subtitle {
   color: var(--chrome-yellow);
   font-family: var(--ff-source-sans-pro);
-  font-size: var(--fs-7);
+  font-size: 7rem;
+  font-weight: 900;
   margin-block-end: 15px;
 }
 
@@ -378,13 +379,6 @@ body {
   margin-block-end: 30px;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
 
 .about-banner { margin-block-end: 30px; }
 
@@ -925,17 +919,19 @@ body {
   .navbar-list {
     display: flex;
     gap: 25px;
+    transition: all ease 0.1s;
   }
 
+  .navbar-item:hover{
+    color: var(--chrome-yellow);
+  }
   .navbar-item:not(:last-child) { border-bottom: none; }
 
-  .navbar-link { color: var(--color); }
-
-
-
-  /**
-   * HERO
-   */
+  .navbar-link { color: var(--color); 
+  transition: all ease ;}
+  .navbar-link :hover{
+    color:var(--chrome-yellow)
+  }
 
   .hero { min-height: 700px; }
 
