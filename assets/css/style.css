@@ -369,7 +369,7 @@ body {
 
 .hero-title {
   color: var(--white);
-  font-size: var(--fs-1);
+  font-size: 2em;
   margin-block-end: 20px;
 }
 
@@ -593,9 +593,112 @@ body {
 }
 
 
+/* 
+TEAM SECTION
+ */
+
+ .team {
+  padding-block: var(--section-padding);
+}
+
+.team-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.team-card {
+  text-align: center;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-12);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.team-banner {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-block-end: 15px;
+  position: relative;
+}
+
+.team-banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-name {
+  color: var(--st-patricks-blue);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+  margin-block-end: 10px;
+}
+
+.team-title {
+  color: var(--purple-navy);
+  font-size: var(--fs-8);
+  margin-block-end: 15px;
+}
+
+.team-text {
+  color: var(--text-color);
+  font-size: var(--fs-6);
+  margin-block-end: 15px;
+}
 
 
+/* contact */
 
+.contact {
+  padding-block: var(--section-padding);
+}
+
+.contact-details {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-12);
+}
+
+.contact-icon {
+  background-color: var(--winter-sky);
+  color: var(--white);
+  font-size: 3rem;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-title {
+  color: var(--st-patricks-blue);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+  margin-block-end: 10px;
+}
+
+.contact-text {
+  color: var(--purple-navy);
+  font-size: var(--fs-8);
+}
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -738,6 +841,7 @@ body {
     margin-inline: auto;
   }
 
+ 
   .section-title { --fs-3: 3.6rem; }
 
 
@@ -752,6 +856,8 @@ body {
     gap: 5px;
     margin-inline-start: auto;
   }
+
+  
 
 
 
@@ -795,7 +901,14 @@ body {
 
 }
 
-
+@media(max-width:464px){
+  .hero-title{
+    font-size: 1.2em;
+  }
+  .hero-subtitle{
+    font-size: 3.5rem;
+  }
+}
 
 
 
@@ -933,7 +1046,8 @@ body {
     color:var(--chrome-yellow)
   }
 
-  .hero { min-height: 700px; }
+  .hero { min-height: 95vh; }
+  /* changed from 700px to 95vh */
 
 
 
@@ -1015,7 +1129,8 @@ body {
    * HERO
    */
 
-  .hero { min-height: 800px; }
+  .hero { min-height: 95vh; } 
+  /* changed from 800px to 95vh */
 
 
 
